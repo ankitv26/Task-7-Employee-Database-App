@@ -29,17 +29,16 @@ To run this project, you need to create a database and the employees table in My
   CREATE TABLE employees (
       id INT AUTO_INCREMENT PRIMARY KEY,
       name VARCHAR(100) NOT NULL,
-      email VARCHAR(100) NOT NULL UNIQUE,
-      department VARCHAR(100),
+      position VARCHAR(100),
       salary DOUBLE
   );
 
 ```
-###3. Sample Data 
+### 3. Sample Data 
 ```sql
-  INSERT INTO employees (name, email, department, salary) VALUES
-  ('Alice Johnson', 'alice.johnson@example.com', 'HR', 55000),
-  ('Bob Smith', 'bob.smith@example.com', 'Engineering', 75000);
+  INSERT INTO employees (name, position, salary) VALUES
+  ('Alice Johnson', 'HR', 55000),
+  ('Bob Smith','Engineering', 75000);
 
 ```
 ### Notes:
